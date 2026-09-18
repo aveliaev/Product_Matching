@@ -1,0 +1,283 @@
+
+=== train = small ===
+  small   title cosine (no training)       test F1=0.554 [0.513, 0.594]  P=0.412 R=0.843  PR-AUC=0.564
+  small   logreg | all                     test F1=0.743 [0.706, 0.777]  P=0.634 R=0.897  PR-AUC=0.857
+  small   logreg | only title_word         test F1=0.554 [0.513, 0.594]  P=0.412 R=0.843  PR-AUC=0.564
+  small   logreg | only title_char         test F1=0.577 [0.539, 0.619]  P=0.444 R=0.827  PR-AUC=0.598
+  small   logreg | only title_jaccard      test F1=0.481 [0.441, 0.519]  P=0.343 R=0.803  PR-AUC=0.409
+  small   logreg | only description        test F1=0.500 [0.463, 0.538]  P=0.364 R=0.800  PR-AUC=0.420
+  small   logreg | only codes              test F1=0.655 [0.609, 0.698]  P=0.649 R=0.660  PR-AUC=0.691
+  small   logreg | only numbers            test F1=0.718 [0.681, 0.754]  P=0.641 R=0.817  PR-AUC=0.766
+  small   logreg | only brand              test F1=0.429 [0.397, 0.458]  P=0.273 R=1.000  PR-AUC=0.263
+  small   logreg | all − title_word        test F1=0.744 [0.708, 0.778]  P=0.639 R=0.890  PR-AUC=0.858
+  small   logreg | all − title_char        test F1=0.719 [0.680, 0.756]  P=0.608 R=0.880  PR-AUC=0.834
+  small   logreg | all − title_jaccard     test F1=0.678 [0.642, 0.717]  P=0.539 R=0.913  PR-AUC=0.776
+  small   logreg | all − description       test F1=0.698 [0.663, 0.736]  P=0.558 R=0.933  PR-AUC=0.855
+  small   logreg | all − codes             test F1=0.748 [0.709, 0.784]  P=0.677 R=0.837  PR-AUC=0.835
+  small   logreg | all − numbers           test F1=0.716 [0.678, 0.753]  P=0.615 R=0.857  PR-AUC=0.806
+  small   logreg | all − brand             test F1=0.728 [0.689, 0.764]  P=0.619 R=0.883  PR-AUC=0.862
+  small   random_forest | all              test F1=0.746 [0.709, 0.781]  P=0.634 R=0.907  PR-AUC=0.853
+  small   grad_boosting | all              test F1=0.788 [0.751, 0.821]  P=0.718 R=0.873  PR-AUC=0.849
+  small   logreg | tfidf pair vectors      test F1=0.567 [0.528, 0.605]  P=0.422 R=0.863  PR-AUC=0.624
+  small   logreg | all | clean=none        test F1=0.760 [0.722, 0.797]  P=0.663 R=0.890  PR-AUC=0.868
+  small   grad_boosting | all | clean=none test F1=0.765 [0.728, 0.800]  P=0.671 R=0.890  PR-AUC=0.860
+  small   logreg | all | clean=full        test F1=0.709 [0.670, 0.748]  P=0.589 R=0.890  PR-AUC=0.813
+  small   grad_boosting | all | clean=full test F1=0.745 [0.705, 0.779]  P=0.659 R=0.857  PR-AUC=0.813
+
+=== train = medium ===
+  medium  title cosine (no training)       test F1=0.559 [0.519, 0.599]  P=0.429 R=0.803  PR-AUC=0.567
+  medium  logreg | all                     test F1=0.747 [0.712, 0.783]  P=0.636 R=0.907  PR-AUC=0.855
+  medium  logreg | only title_word         test F1=0.559 [0.519, 0.599]  P=0.429 R=0.803  PR-AUC=0.567
+  medium  logreg | only title_char         test F1=0.563 [0.524, 0.604]  P=0.454 R=0.740  PR-AUC=0.596
+  medium  logreg | only title_jaccard      test F1=0.492 [0.455, 0.528]  P=0.345 R=0.860  PR-AUC=0.409
+  medium  logreg | only description        test F1=0.502 [0.468, 0.540]  P=0.355 R=0.857  PR-AUC=0.433
+  medium  logreg | only codes              test F1=0.651 [0.609, 0.690]  P=0.562 R=0.773  PR-AUC=0.692
+  medium  logreg | only numbers            test F1=0.718 [0.681, 0.754]  P=0.641 R=0.817  PR-AUC=0.766
+  medium  logreg | only brand              test F1=0.429 [0.397, 0.458]  P=0.273 R=1.000  PR-AUC=0.263
+  medium  logreg | all − title_word        test F1=0.730 [0.694, 0.765]  P=0.616 R=0.897  PR-AUC=0.854
+  medium  logreg | all − title_char        test F1=0.733 [0.696, 0.769]  P=0.613 R=0.910  PR-AUC=0.829
+  medium  logreg | all − title_jaccard     test F1=0.694 [0.657, 0.731]  P=0.571 R=0.883  PR-AUC=0.774
+  medium  logreg | all − description       test F1=0.742 [0.706, 0.778]  P=0.626 R=0.910  PR-AUC=0.851
+  medium  logreg | all − codes             test F1=0.717 [0.681, 0.754]  P=0.586 R=0.923  PR-AUC=0.833
+  medium  logreg | all − numbers           test F1=0.722 [0.685, 0.757]  P=0.609 R=0.887  PR-AUC=0.816
+  medium  logreg | all − brand             test F1=0.736 [0.700, 0.770]  P=0.626 R=0.893  PR-AUC=0.860
+  medium  random_forest | all              test F1=0.773 [0.736, 0.806]  P=0.679 R=0.897  PR-AUC=0.888
+  medium  grad_boosting | all              test F1=0.823 [0.789, 0.855]  P=0.776 R=0.877  PR-AUC=0.878
+  medium  logreg | tfidf pair vectors      test F1=0.651 [0.611, 0.689]  P=0.522 R=0.863  PR-AUC=0.709
+  medium  logreg | all | clean=none        test F1=0.748 [0.713, 0.783]  P=0.633 R=0.913  PR-AUC=0.866
+  medium  grad_boosting | all | clean=none test F1=0.815 [0.782, 0.847]  P=0.742 R=0.903  PR-AUC=0.893
+  medium  logreg | all | clean=full        test F1=0.714 [0.676, 0.751]  P=0.600 R=0.880  PR-AUC=0.810
+  medium  grad_boosting | all | clean=full test F1=0.789 [0.756, 0.824]  P=0.720 R=0.873  PR-AUC=0.860
+
+=== train = large ===
+  large   title cosine (no training)       test F1=0.556 [0.517, 0.596]  P=0.426 R=0.800  PR-AUC=0.567
+  large   logreg | all                     test F1=0.766 [0.731, 0.800]  P=0.697 R=0.850  PR-AUC=0.854
+  large   logreg | only title_word         test F1=0.556 [0.517, 0.596]  P=0.426 R=0.800  PR-AUC=0.567
+  large   logreg | only title_char         test F1=0.575 [0.536, 0.614]  P=0.453 R=0.787  PR-AUC=0.598
+  large   logreg | only title_jaccard      test F1=0.446 [0.406, 0.488]  P=0.334 R=0.673  PR-AUC=0.409
+  large   logreg | only description        test F1=0.493 [0.457, 0.534]  P=0.364 R=0.763  PR-AUC=0.420
+  large   logreg | only codes              test F1=0.668 [0.627, 0.708]  P=0.615 R=0.730  PR-AUC=0.691
+  large   logreg | only numbers            test F1=0.718 [0.681, 0.754]  P=0.641 R=0.817  PR-AUC=0.766
+  large   logreg | only brand              test F1=0.429 [0.397, 0.458]  P=0.273 R=1.000  PR-AUC=0.263
+  large   logreg | all − title_word        test F1=0.745 [0.710, 0.780]  P=0.650 R=0.873  PR-AUC=0.852
+  large   logreg | all − title_char        test F1=0.737 [0.698, 0.772]  P=0.640 R=0.867  PR-AUC=0.827
+  large   logreg | all − title_jaccard     test F1=0.692 [0.655, 0.730]  P=0.569 R=0.883  PR-AUC=0.773
+  large   logreg | all − description       test F1=0.757 [0.720, 0.792]  P=0.660 R=0.887  PR-AUC=0.851
+  large   logreg | all − codes             test F1=0.742 [0.703, 0.779]  P=0.645 R=0.873  PR-AUC=0.834
+  large   logreg | all − numbers           test F1=0.718 [0.679, 0.754]  P=0.634 R=0.827  PR-AUC=0.815
+  large   logreg | all − brand             test F1=0.747 [0.709, 0.782]  P=0.662 R=0.857  PR-AUC=0.857
+  large   random_forest | all              test F1=0.825 [0.790, 0.857]  P=0.764 R=0.897  PR-AUC=0.919
+  large   grad_boosting | all              test F1=0.830 [0.795, 0.860]  P=0.786 R=0.880  PR-AUC=0.915
+  large   logreg | tfidf pair vectors      test F1=0.726 [0.689, 0.761]  P=0.634 R=0.850  PR-AUC=0.810
+  large   logreg | all | clean=none        test F1=0.783 [0.750, 0.818]  P=0.719 R=0.860  PR-AUC=0.866
+  large   grad_boosting | all | clean=none test F1=0.844 [0.812, 0.874]  P=0.808 R=0.883  PR-AUC=0.917
+  large   logreg | all | clean=full        test F1=0.720 [0.682, 0.756]  P=0.612 R=0.873  PR-AUC=0.805
+  large   grad_boosting | all | clean=full test F1=0.802 [0.767, 0.833]  P=0.733 R=0.887  PR-AUC=0.885
+
+=== train = xlarge ===
+  xlarge  title cosine (no training)       test F1=0.557 [0.517, 0.597]  P=0.428 R=0.800  PR-AUC=0.567
+  xlarge  logreg | all                     test F1=0.751 [0.712, 0.786]  P=0.667 R=0.860  PR-AUC=0.848
+  xlarge  logreg | only title_word         test F1=0.557 [0.517, 0.597]  P=0.428 R=0.800  PR-AUC=0.567
+  xlarge  logreg | only title_char         test F1=0.559 [0.519, 0.602]  P=0.452 R=0.733  PR-AUC=0.598
+  xlarge  logreg | only title_jaccard      test F1=0.437 [0.395, 0.479]  P=0.331 R=0.643  PR-AUC=0.409
+  xlarge  logreg | only description        test F1=0.294 [0.240, 0.347]  P=0.492 R=0.210  PR-AUC=0.424
+  xlarge  logreg | only codes              test F1=0.668 [0.627, 0.708]  P=0.615 R=0.730  PR-AUC=0.691
+  xlarge  logreg | only numbers            test F1=0.713 [0.673, 0.752]  P=0.691 R=0.737  PR-AUC=0.766
+  xlarge  logreg | only brand              test F1=0.429 [0.397, 0.458]  P=0.273 R=1.000  PR-AUC=0.263
+  xlarge  logreg | all − title_word        test F1=0.736 [0.700, 0.772]  P=0.646 R=0.857  PR-AUC=0.845
+  xlarge  logreg | all − title_char        test F1=0.747 [0.709, 0.784]  P=0.675 R=0.837  PR-AUC=0.825
+  xlarge  logreg | all − title_jaccard     test F1=0.691 [0.651, 0.730]  P=0.587 R=0.840  PR-AUC=0.772
+  xlarge  logreg | all − description       test F1=0.750 [0.713, 0.784]  P=0.659 R=0.870  PR-AUC=0.845
+  xlarge  logreg | all − codes             test F1=0.743 [0.704, 0.778]  P=0.658 R=0.853  PR-AUC=0.829
+  xlarge  logreg | all − numbers           test F1=0.713 [0.673, 0.750]  P=0.636 R=0.810  PR-AUC=0.808
+  xlarge  logreg | all − brand             test F1=0.739 [0.701, 0.774]  P=0.646 R=0.863  PR-AUC=0.852
+  xlarge  random_forest | all              test F1=0.854 [0.824, 0.884]  P=0.813 R=0.900  PR-AUC=0.923
+  xlarge  grad_boosting | all              test F1=0.851 [0.822, 0.880]  P=0.810 R=0.897  PR-AUC=0.915
+  xlarge  logreg | tfidf pair vectors      test F1=0.777 [0.739, 0.811]  P=0.734 R=0.827  PR-AUC=0.863
+  xlarge  logreg | all | clean=none        test F1=0.789 [0.752, 0.824]  P=0.737 R=0.850  PR-AUC=0.861
+  xlarge  grad_boosting | all | clean=none test F1=0.840 [0.808, 0.870]  P=0.793 R=0.893  PR-AUC=0.918
+  xlarge  logreg | all | clean=full        test F1=0.727 [0.690, 0.763]  P=0.655 R=0.817  PR-AUC=0.802
+  xlarge  grad_boosting | all | clean=full test F1=0.808 [0.775, 0.838]  P=0.765 R=0.857  PR-AUC=0.886
+
+=== Разбор ошибок: logreg | tfidf pair vectors (train=xlarge, выбрана по val F1) ===
+
+FP=90  FN=52
+FP: есть общий код модели 58%, числа в заголовках различаются 97%
+FN: нет общего кода 37%, числа различаются 98%
+
+самые уверенные FP:
+    score                                                                                                        title_left                                                                                                             title_right
+0.920941    lenovo thinkserver td350 - tower xeon e5-2620v4 2.1 ghz 16 gb 0 gb lenovo 70dg007qux x86 based servers cdw.com          lenovo thinkserver td350 - tower xeon e5-2620v4 2.1 ghz 16 gb 0 gb lenovo 70dg006qux x86 based servers cdw.com
+0.917358           zotac geforce gtx 1060 - amp! edition graphics card gf 6 gb zotac gb zt-p10600b-10m video cards cdw.com                              zotac geforce gtx 1060 amp edition 3072mb gddr5 pci-express graphics card ▷ zotac … | ocuk
+0.901293                              benq rl2455hm 24 1920x1080 tn widescreen led monitor - black/red ▷ benq blac… | ocuk benq xl2430 zowie 24 1920x1080 tn 144hz widescreen led monitor - black/red /w flicker free technolo ▷ benq moni… | ocuk
+0.884708                                                                                  hyperx fury 64go 2133 mhz (4x16)                                                                                                hyperx fury 8go 2133 mhz
+0.857936 corsair memory 4gb ddr3 so-dimm pc3-10666 (1333) dual channel laptop laptop ln32201 - cmso4gx3m1a1333c9 | scan uk             corsair memory 4gb ddr3 so-dimm pc3-8500 (1066) dual channel laptop laptop ln26795 - cm3x4gsd1066 | scan uk
+0.851245                                                                                  amd ryzen threadripper 1950x box                                                                   amd ryzen threadripper 1900x boxed - prijzen tweakers
+0.847989                                    hp 358348-b21 adj 1gb 184p pc2700 cl2.5 18c 128x4 registered ecc ddr dimm t027                                           hp 376638-b21 ami 1gb 184p pc2700 cl2.5 36c 64x4 registered ecc ddr dimm t027
+0.843765      seagate ironwolf pro 10tb nas 7200rpm sata 6gb/s 256mb cache hdd oem (st10000ne0004) ▷ seagate cache… | ocuk                   seagate ironwolf pro 8tb nas 7200rpm sata 6gb/s 256mb cache hdd oem (st8000ne0021) ▷ seagate … | ocuk
+0.829922                       lenovo thinkpad 11e chromebook - 11.6 celeron n3160 4 gb ram 16 ssd g oetc consortium store                          lenovo thinkpad yoga 11e chromebook - 11.6 celeron n3160 4 gb ram 16 ssd oetc consortium store
+0.819059                          apple imac 21.5-inch 2.5ghz quad-core i5 (mid 2011) mc309ll/a imac 21.5 | macofalltrades                            apple imac 21.5-inch 2.8ghz quad-core i7 (mid 2011) mc812ll/a-bto imac 21.5 | macofalltrades
+
+самые уверенные FN:
+    score                                                                                                 title_left                                                                                                                    title_right
+0.014963                  asus geforce gtx 1050 expedition 2048mb gddr5 pci-express graphics card ▷ asus gr… | ocuk                                                                                                             asus ex-gtx1050-2g
+0.032815 hpe proliant dl380 g6 performance - xeon x5560 2.8 ghz 12 gb 0 gb hpe 491315-001 x86 based servers cdw.com                                                                                    491315-001 hp dl380 g6 2p x5560 2.8ghz 12gb
+0.034828                                                                           hyperx fury 64go 2133 mhz (4x16)        kingston fury black 64gb (4x16gb) ddr4 pc4-17000c14 2133mhz dual/quad channel kit (hx421c14fbk4/64) ▷ kingston … | ocuk
+0.034897                                                                                 corsair cmk16gx4m2a2400c14           corsair vengeance lpx black 16gb (2x8gb) ddr4 pc4-19200 2400mhz dual channel kit 2x8gb | cmk16gx4m2a2400c14 novatech
+0.047656        apple mac mini 2.8ghz intel core i5 mac mini qc i5 2.6ghz/8gb/1tb/iris graphics - black friday 2017                                                                       mac mini i5 8/1tbfd iris graphic graphic | tradineur.com
+0.059058                                               corsair vengeance led cmu32gx4m2c3000c15r - prijzen tweakers                       corsair vengeance red led 32gb ddr4 3000 memory kit 2x 16gb 16gb ln73403 - cmu32gx4m2c3000c15r | scan uk
+0.063974                                                             apple - ipad mini 4 wi-fi 128gb space gray -us                                                apple ipad mini 4 wi-fi - tablet 128 gb 7.9 apple 7.9 mk9n2ll/a tablets cdw.com
+0.073244   corsair 16gb vengeance lpx ddr4 2400mhz ram/memory kit 4x 4gb 4gb ln69019 - cmk16gx4m4a2400c16 | scan uk corsair vengeance lpx 16gb (4x4gb) ddr4 pc4-19200c16 2400mhz quad channel kit - black (cmk16gx4m4a24 ▷ corsair 2400mhz… | ocuk
+0.079682                              apple - mac mini intel core i5 (1.4ghz) 4gb memory 500gb hard drive white -us               apple mac mini core i5 500 gb hdd 4 ram os x 10.10 yosemite apple yosemite - mgem2ll/a desktop computers cdw.com
+0.092174                       apple mac mini 2.8ghz intel core i5 hp elite slice (energy star) - black friday 2017                            apple mac mini 2.8ghz intel core i5 mac mini qc i5 2.6ghz/8gb/1tb/iris graphics - black friday 2017
+
+=== small: сравнение с «logreg | all» ===
+                                                 test_F1  test_P  test_R  test_PR_AUC    dF1  dF1_lo  dF1_hi  mcnemar_p
+section        model                                                                                                   
+0 trivial      title cosine (no training)          0.554   0.412   0.843        0.564 -0.189  -0.214  -0.160      0.000
+A features     logreg | all                        0.743   0.634   0.897        0.857  0.000   0.000   0.000      1.000
+               logreg | only title_word            0.554   0.412   0.843        0.564 -0.189  -0.214  -0.160      0.000
+               logreg | only title_char            0.577   0.444   0.827        0.598 -0.166  -0.192  -0.136      0.000
+               logreg | only title_jaccard         0.481   0.343   0.803        0.409 -0.263  -0.294  -0.229      0.000
+               logreg | only description           0.500   0.364   0.800        0.420 -0.243  -0.275  -0.208      0.000
+               logreg | only codes                 0.655   0.649   0.660        0.691 -0.089  -0.131  -0.047      0.137
+               logreg | only numbers               0.718   0.641   0.817        0.766 -0.025  -0.056   0.009      0.687
+               logreg | only brand                 0.429   0.273   1.000        0.263 -0.315  -0.343  -0.284      0.000
+               logreg | all − title_word           0.744   0.639   0.890        0.858  0.001  -0.016   0.019      0.899
+               logreg | all − title_char           0.719   0.608   0.880        0.834 -0.024  -0.039  -0.009      0.003
+               logreg | all − title_jaccard        0.678   0.539   0.913        0.776 -0.065  -0.084  -0.045      0.000
+               logreg | all − description          0.698   0.558   0.933        0.855 -0.045  -0.063  -0.027      0.000
+               logreg | all − codes                0.748   0.677   0.837        0.835  0.005  -0.014   0.025      0.040
+               logreg | all − numbers              0.716   0.615   0.857        0.806 -0.027  -0.048  -0.008      0.060
+               logreg | all − brand                0.728   0.619   0.883        0.862 -0.015  -0.030   0.000      0.096
+B classifier   random_forest | all                 0.746   0.634   0.907        0.853  0.003  -0.017   0.023      1.000
+               grad_boosting | all                 0.788   0.718   0.873        0.849  0.045   0.020   0.072      0.000
+D pair vectors logreg | tfidf pair vectors         0.567   0.422   0.863        0.624 -0.176  -0.206  -0.144      0.000
+C cleaning     logreg | all | clean=none           0.760   0.663   0.890        0.868  0.017  -0.000   0.034      0.040
+               grad_boosting | all | clean=none    0.765   0.671   0.890        0.860  0.022  -0.003   0.047      0.051
+               logreg | all | clean=full           0.709   0.589   0.890        0.813 -0.034  -0.050  -0.016      0.000
+               grad_boosting | all | clean=full    0.745   0.659   0.857        0.813  0.002  -0.027   0.031      0.415
+
+=== medium: сравнение с «logreg | all» ===
+                                                 test_F1  test_P  test_R  test_PR_AUC    dF1  dF1_lo  dF1_hi  mcnemar_p
+section        model                                                                                                   
+0 trivial      title cosine (no training)          0.559   0.429   0.803        0.567 -0.188  -0.215  -0.158      0.000
+A features     logreg | all                        0.747   0.636   0.907        0.855  0.000   0.000   0.000      1.000
+               logreg | only title_word            0.559   0.429   0.803        0.567 -0.188  -0.215  -0.158      0.000
+               logreg | only title_char            0.563   0.454   0.740        0.596 -0.185  -0.216  -0.152      0.000
+               logreg | only title_jaccard         0.492   0.345   0.860        0.409 -0.255  -0.286  -0.224      0.000
+               logreg | only description           0.502   0.355   0.857        0.433 -0.245  -0.275  -0.209      0.000
+               logreg | only codes                 0.651   0.562   0.773        0.692 -0.096  -0.129  -0.063      0.000
+               logreg | only numbers               0.718   0.641   0.817        0.766 -0.029  -0.061   0.005      0.580
+               logreg | only brand                 0.429   0.273   1.000        0.263 -0.319  -0.347  -0.288      0.000
+               logreg | all − title_word           0.730   0.616   0.897        0.854 -0.017  -0.032  -0.001      0.049
+               logreg | all − title_char           0.733   0.613   0.910        0.829 -0.014  -0.031   0.001      0.058
+               logreg | all − title_jaccard        0.694   0.571   0.883        0.774 -0.054  -0.073  -0.034      0.000
+               logreg | all − description          0.742   0.626   0.910        0.851 -0.005  -0.015   0.005      0.263
+               logreg | all − codes                0.717   0.586   0.923        0.833 -0.031  -0.045  -0.016      0.000
+               logreg | all − numbers              0.722   0.609   0.887        0.816 -0.025  -0.041  -0.009      0.009
+               logreg | all − brand                0.736   0.626   0.893        0.860 -0.011  -0.026   0.004      0.312
+B classifier   random_forest | all                 0.773   0.679   0.897        0.888  0.026   0.003   0.048      0.005
+               grad_boosting | all                 0.823   0.776   0.877        0.878  0.076   0.047   0.105      0.000
+D pair vectors logreg | tfidf pair vectors         0.651   0.522   0.863        0.709 -0.096  -0.127  -0.066      0.000
+C cleaning     logreg | all | clean=none           0.748   0.633   0.913        0.866  0.000  -0.014   0.016      1.000
+               grad_boosting | all | clean=none    0.815   0.742   0.903        0.893  0.068   0.041   0.096      0.000
+               logreg | all | clean=full           0.714   0.600   0.880        0.810 -0.034  -0.050  -0.017      0.000
+               grad_boosting | all | clean=full    0.789   0.720   0.873        0.860  0.042   0.014   0.069      0.000
+
+=== large: сравнение с «logreg | all» ===
+                                                 test_F1  test_P  test_R  test_PR_AUC    dF1  dF1_lo  dF1_hi  mcnemar_p
+section        model                                                                                                   
+0 trivial      title cosine (no training)          0.556   0.426   0.800        0.567 -0.210  -0.240  -0.179      0.000
+A features     logreg | all                        0.766   0.697   0.850        0.854  0.000   0.000   0.000      1.000
+               logreg | only title_word            0.556   0.426   0.800        0.567 -0.210  -0.240  -0.179      0.000
+               logreg | only title_char            0.575   0.453   0.787        0.598 -0.191  -0.223  -0.159      0.000
+               logreg | only title_jaccard         0.446   0.334   0.673        0.409 -0.319  -0.356  -0.282      0.000
+               logreg | only description           0.493   0.364   0.763        0.420 -0.273  -0.307  -0.236      0.000
+               logreg | only codes                 0.668   0.615   0.730        0.691 -0.098  -0.138  -0.059      0.000
+               logreg | only numbers               0.718   0.641   0.817        0.766 -0.047  -0.081  -0.013      0.004
+               logreg | only brand                 0.429   0.273   1.000        0.263 -0.337  -0.369  -0.304      0.000
+               logreg | all − title_word           0.745   0.650   0.873        0.852 -0.020  -0.039  -0.001      0.004
+               logreg | all − title_char           0.737   0.640   0.867        0.827 -0.029  -0.049  -0.009      0.000
+               logreg | all − title_jaccard        0.692   0.569   0.883        0.773 -0.074  -0.098  -0.051      0.000
+               logreg | all − description          0.757   0.660   0.887        0.851 -0.009  -0.025   0.007      0.024
+               logreg | all − codes                0.742   0.645   0.873        0.834 -0.024  -0.039  -0.007      0.000
+               logreg | all − numbers              0.718   0.634   0.827        0.815 -0.048  -0.070  -0.027      0.000
+               logreg | all − brand                0.747   0.662   0.857        0.857 -0.019  -0.031  -0.006      0.001
+B classifier   random_forest | all                 0.825   0.764   0.897        0.919  0.059   0.036   0.084      0.000
+               grad_boosting | all                 0.830   0.786   0.880        0.915  0.064   0.040   0.089      0.000
+D pair vectors logreg | tfidf pair vectors         0.726   0.634   0.850        0.810 -0.039  -0.075  -0.002      0.012
+C cleaning     logreg | all | clean=none           0.783   0.719   0.860        0.866  0.017  -0.001   0.036      0.098
+               grad_boosting | all | clean=none    0.844   0.808   0.883        0.917  0.078   0.052   0.104      0.000
+               logreg | all | clean=full           0.720   0.612   0.873        0.805 -0.046  -0.067  -0.023      0.000
+               grad_boosting | all | clean=full    0.802   0.733   0.887        0.885  0.037   0.009   0.065      0.025
+
+=== xlarge: сравнение с «logreg | all» ===
+                                                 test_F1  test_P  test_R  test_PR_AUC    dF1  dF1_lo  dF1_hi  mcnemar_p
+section        model                                                                                                   
+0 trivial      title cosine (no training)          0.557   0.428   0.800        0.567 -0.194  -0.221  -0.162      0.000
+A features     logreg | all                        0.751   0.667   0.860        0.848  0.000   0.000   0.000      1.000
+               logreg | only title_word            0.557   0.428   0.800        0.567 -0.194  -0.221  -0.162      0.000
+               logreg | only title_char            0.559   0.452   0.733        0.598 -0.192  -0.225  -0.158      0.000
+               logreg | only title_jaccard         0.437   0.331   0.643        0.409 -0.314  -0.351  -0.274      0.000
+               logreg | only description           0.294   0.492   0.210        0.424 -0.457  -0.519  -0.396      0.000
+               logreg | only codes                 0.668   0.615   0.730        0.691 -0.083  -0.119  -0.046      0.001
+               logreg | only numbers               0.713   0.691   0.737        0.766 -0.038  -0.073  -0.001      0.630
+               logreg | only brand                 0.429   0.273   1.000        0.263 -0.323  -0.354  -0.290      0.000
+               logreg | all − title_word           0.736   0.646   0.857        0.845 -0.015  -0.033   0.004      0.092
+               logreg | all − title_char           0.747   0.675   0.837        0.825 -0.004  -0.022   0.015      1.000
+               logreg | all − title_jaccard        0.691   0.587   0.840        0.772 -0.060  -0.083  -0.037      0.000
+               logreg | all − description          0.750   0.659   0.870        0.845 -0.001  -0.009   0.008      0.549
+               logreg | all − codes                0.743   0.658   0.853        0.829 -0.008  -0.024   0.009      0.405
+               logreg | all − numbers              0.713   0.636   0.810        0.808 -0.038  -0.060  -0.016      0.005
+               logreg | all − brand                0.739   0.646   0.863        0.852 -0.012  -0.025   0.002      0.043
+B classifier   random_forest | all                 0.854   0.813   0.900        0.923  0.103   0.078   0.131      0.000
+               grad_boosting | all                 0.851   0.810   0.897        0.915  0.100   0.074   0.128      0.000
+D pair vectors logreg | tfidf pair vectors         0.777   0.734   0.827        0.863  0.026  -0.011   0.065      0.033
+C cleaning     logreg | all | clean=none           0.789   0.737   0.850        0.861  0.038   0.021   0.058      0.000
+               grad_boosting | all | clean=none    0.840   0.793   0.893        0.918  0.089   0.064   0.116      0.000
+               logreg | all | clean=full           0.727   0.655   0.817        0.802 -0.024  -0.044  -0.003      0.098
+               grad_boosting | all | clean=full    0.808   0.765   0.857        0.886  0.057   0.029   0.086      0.000
+
+=== F1 на test: конфигурация × размер ===
+train                                            small  medium  large  xlarge
+section        model                                                         
+0 trivial      title cosine (no training)        0.554   0.559  0.556   0.557
+A features     logreg | all                      0.743   0.747  0.766   0.751
+               logreg | all − brand              0.728   0.736  0.747   0.739
+               logreg | all − codes              0.748   0.717  0.742   0.743
+               logreg | all − description        0.698   0.742  0.757   0.750
+               logreg | all − numbers            0.716   0.722  0.718   0.713
+               logreg | all − title_char         0.719   0.733  0.737   0.747
+               logreg | all − title_jaccard      0.678   0.694  0.692   0.691
+               logreg | all − title_word         0.744   0.730  0.745   0.736
+               logreg | only brand               0.429   0.429  0.429   0.429
+               logreg | only codes               0.655   0.651  0.668   0.668
+               logreg | only description         0.500   0.502  0.493   0.294
+               logreg | only numbers             0.718   0.718  0.718   0.713
+               logreg | only title_char          0.577   0.563  0.575   0.559
+               logreg | only title_jaccard       0.481   0.492  0.446   0.437
+               logreg | only title_word          0.554   0.559  0.556   0.557
+B classifier   grad_boosting | all               0.788   0.823  0.830   0.851
+               random_forest | all               0.746   0.773  0.825   0.854
+C cleaning     grad_boosting | all | clean=full  0.745   0.789  0.802   0.808
+               grad_boosting | all | clean=none  0.765   0.815  0.844   0.840
+               logreg | all | clean=full         0.709   0.714  0.720   0.727
+               logreg | all | clean=none         0.760   0.748  0.783   0.789
+D pair vectors logreg | tfidf pair vectors       0.567   0.651  0.726   0.777
+
+=== порог: val-подобранный vs 0.5 vs оракул (test) ===
+                            threshold  test_F1  test_F1_t05  test_F1_oracle
+train  model                                                               
+small  logreg | all             0.391    0.743        0.754           0.781
+       random_forest | all      0.373    0.746        0.799           0.808
+       grad_boosting | all      0.423    0.788        0.788           0.799
+medium logreg | all             0.294    0.747        0.787           0.789
+       random_forest | all      0.385    0.773        0.804           0.810
+       grad_boosting | all      0.423    0.823        0.835           0.844
+large  logreg | all             0.400    0.766        0.771           0.777
+       random_forest | all      0.397    0.825        0.834           0.836
+       grad_boosting | all      0.380    0.830        0.833           0.838
+xlarge logreg | all             0.310    0.751        0.766           0.767
+       random_forest | all      0.386    0.854        0.847           0.855
+       grad_boosting | all      0.347    0.851        0.838           0.854
