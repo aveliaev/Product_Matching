@@ -1,0 +1,42 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 7190.63it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: intfloat/multilingual-e5-small
+Key               | Status  | 
+------------------+---------+-
+classifier.bias   | MISSING | 
+classifier.weight | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+multilingual-e5-small | title | len128 lr5e-05 ep5 | train=medium (6475 пар) | device=mps
+  ep1 step 0/203 loss=0.7024 [1s]
+  ep1 step 50/203 loss=0.6205 [24s]
+  ep1 step 100/203 loss=0.5670 [49s]
+  ep1 step 150/203 loss=0.4509 [73s]
+  ep1 step 200/203 loss=0.3415 [98s]
+  ep1: train loss=0.4547  val F1=0.8480  [115s]
+  ep2 step 0/203 loss=0.2131 [115s]
+  ep2 step 50/203 loss=0.2606 [147s]
+  ep2 step 100/203 loss=0.2314 [174s]
+  ep2 step 150/203 loss=0.1917 [203s]
+  ep2 step 200/203 loss=0.1799 [228s]
+  ep2: train loss=0.2042  val F1=0.9133  [244s]
+  ep3 step 0/203 loss=0.0301 [245s]
+  ep3 step 50/203 loss=0.1811 [269s]
+  ep3 step 100/203 loss=0.1735 [294s]
+  ep3 step 150/203 loss=0.1532 [321s]
+  ep3 step 200/203 loss=0.1406 [347s]
+  ep3: train loss=0.1557  val F1=0.9162  [363s]
+  ep4 step 0/203 loss=0.0254 [365s]
+  ep4 step 50/203 loss=0.1236 [392s]
+  ep4 step 100/203 loss=0.1144 [419s]
+  ep4 step 150/203 loss=0.1074 [448s]
+  ep4 step 200/203 loss=0.1162 [480s]
+  ep4: train loss=0.1142  val F1=0.9211  [499s]
+  ep5 step 0/203 loss=0.1021 [499s]
+  ep5 step 50/203 loss=0.0830 [528s]
+  ep5 step 100/203 loss=0.0773 [554s]
+  ep5 step 150/203 loss=0.0844 [580s]
+  ep5 step 200/203 loss=0.1010 [609s]
+  ep5: train loss=0.0893  val F1=0.9306  [628s]
+
+ИТОГ (multilingual-e5-small | title | len128 lr5e-05 ep5, лучшая эпоха 5): val F1=0.931 | test F1=0.913 [0.890, 0.934] P=0.897 R=0.930 PR-AUC=0.938

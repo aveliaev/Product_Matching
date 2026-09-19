@@ -1,0 +1,260 @@
+[{"stream_name":"stdout","time":1.036582788,"data":"input: ['computers_gs.json', 'computers_train_large.json', 'computers_train_medium.json', 'computers_train_small.json', 'computers_train_xlarge.json', 'val_ids_large.txt', 'val_ids_medium.txt', 'val_ids_small.txt', 'val_ids_xlarge.txt']\n"}
+,{"stream_name":"stdout","time":1.093702809,"data":"GPU 0: Tesla T4 (UUID: GPU-1cc0bd38-0861-e1b8-b07d-2143633b5195)\n"}
+,{"stream_name":"stdout","time":1.093725154,"data":"GPU 1: Tesla T4 (UUID: GPU-be608d97-546e-bca6-2d18-58915c3f4c9e)\n"}
+,{"stream_name":"stdout","time":889.495859253,"data":"\n"}
+,{"stream_name":"stdout","time":889.495913798,"data":"######## run 1 (gpu 1): dl.py --size large --model intfloat/multilingual-e5-base --lr 3e-5 --seed 1 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":889.496606665,"data":"2 [554s]\n"}
+,{"stream_name":"stdout","time":889.496623716,"data":"  ep4 step 450/834 loss=0.0451 [562s]\n"}
+,{"stream_name":"stdout","time":889.496628992,"data":"  ep4 step 500/834 loss=0.0513 [570s]\n"}
+,{"stream_name":"stdout","time":889.496634024,"data":"  ep4 step 550/834 loss=0.0584 [579s]\n"}
+,{"stream_name":"stdout","time":889.496639086,"data":"  ep4 step 600/834 loss=0.0612 [587s]\n"}
+,{"stream_name":"stdout","time":889.496644072,"data":"  ep4 step 650/834 loss=0.0612 [596s]\n"}
+,{"stream_name":"stdout","time":889.496649143,"data":"  ep4 step 700/834 loss=0.0461 [604s]\n"}
+,{"stream_name":"stdout","time":889.496654216,"data":"  ep4 step 750/834 loss=0.0462 [613s]\n"}
+,{"stream_name":"stdout","time":889.49665921,"data":"  ep4 step 800/834 loss=0.0458 [621s]\n"}
+,{"stream_name":"stdout","time":889.496664134,"data":"  ep4: train loss=0.0536  val F1=0.9473  [647s]\n"}
+,{"stream_name":"stdout","time":889.49666914,"data":"  ep5 step 0/834 loss=0.1445 [648s]\n"}
+,{"stream_name":"stdout","time":889.496674092,"data":"  ep5 step 50/834 loss=0.0285 [657s]\n"}
+,{"stream_name":"stdout","time":889.496679025,"data":"  ep5 step 100/834 loss=0.0275 [665s]\n"}
+,{"stream_name":"stdout","time":889.496683958,"data":"  ep5 step 150/834 loss=0.0242 [674s]\n"}
+,{"stream_name":"stdout","time":889.496688924,"data":"  ep5 step 200/834 loss=0.0381 [683s]\n"}
+,{"stream_name":"stdout","time":889.496693899,"data":"  ep5 step 250/834 loss=0.0439 [691s]\n"}
+,{"stream_name":"stdout","time":889.496698842,"data":"  ep5 step 300/834 loss=0.0360 [699s]\n"}
+,{"stream_name":"stdout","time":889.496703783,"data":"  ep5 step 350/834 loss=0.0402 [708s]\n"}
+,{"stream_name":"stdout","time":889.496708689,"data":"  ep5 step 400/834 loss=0.0320 [716s]\n"}
+,{"stream_name":"stdout","time":889.496713606,"data":"  ep5 step 450/834 loss=0.0311 [725s]\n"}
+,{"stream_name":"stdout","time":889.496718557,"data":"  ep5 step 500/834 loss=0.0428 [733s]\n"}
+,{"stream_name":"stdout","time":889.496723453,"data":"  ep5 step 550/834 loss=0.0403 [742s]\n"}
+,{"stream_name":"stdout","time":889.496728431,"data":"  ep5 step 600/834 loss=0.0367 [750s]\n"}
+,{"stream_name":"stdout","time":889.496733341,"data":"  ep5 step 650/834 loss=0.0424 [758s]\n"}
+,{"stream_name":"stdout","time":889.496738289,"data":"  ep5 step 700/834 loss=0.0377 [767s]\n"}
+,{"stream_name":"stdout","time":889.496743316,"data":"  ep5 step 750/834 loss=0.0373 [775s]\n"}
+,{"stream_name":"stdout","time":889.496748261,"data":"  ep5 step 800/834 loss=0.0403 [783s]\n"}
+,{"stream_name":"stdout","time":889.496753147,"data":"  ep5: train loss=0.0382  val F1=0.9506  [810s]\n"}
+,{"stream_name":"stdout","time":889.496758161,"data":"\n"}
+,{"stream_name":"stdout","time":889.496762908,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.951 | test F1=0.948 [0.929, 0.964] P=0.932 R=0.963 PR-AUC=0.984\n"}
+,{"stream_name":"stdout","time":889.496782994,"data":"\n"}
+,{"stream_name":"stdout","time":917.714015116,"data":"\n"}
+,{"stream_name":"stdout","time":917.714060374,"data":"######## run 0 (gpu 0): dl.py --size large --model intfloat/multilingual-e5-base --lr 3e-5 --seed 0 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":917.714744376,"data":"0 [573s]\n"}
+,{"stream_name":"stdout","time":917.71475828,"data":"  ep4 step 450/834 loss=0.0457 [582s]\n"}
+,{"stream_name":"stdout","time":917.714763193,"data":"  ep4 step 500/834 loss=0.0480 [590s]\n"}
+,{"stream_name":"stdout","time":917.714767824,"data":"  ep4 step 550/834 loss=0.0556 [599s]\n"}
+,{"stream_name":"stdout","time":917.714772214,"data":"  ep4 step 600/834 loss=0.0588 [608s]\n"}
+,{"stream_name":"stdout","time":917.714776499,"data":"  ep4 step 650/834 loss=0.0481 [617s]\n"}
+,{"stream_name":"stdout","time":917.714780833,"data":"  ep4 step 700/834 loss=0.0422 [625s]\n"}
+,{"stream_name":"stdout","time":917.714785095,"data":"  ep4 step 750/834 loss=0.0508 [634s]\n"}
+,{"stream_name":"stdout","time":917.714789338,"data":"  ep4 step 800/834 loss=0.0589 [643s]\n"}
+,{"stream_name":"stdout","time":917.714793688,"data":"  ep4: train loss=0.0527  val F1=0.9449  [670s]\n"}
+,{"stream_name":"stdout","time":917.714798026,"data":"  ep5 step 0/834 loss=0.0780 [671s]\n"}
+,{"stream_name":"stdout","time":917.714802333,"data":"  ep5 step 50/834 loss=0.0222 [680s]\n"}
+,{"stream_name":"stdout","time":917.714806667,"data":"  ep5 step 100/834 loss=0.0282 [689s]\n"}
+,{"stream_name":"stdout","time":917.714811,"data":"  ep5 step 150/834 loss=0.0405 [697s]\n"}
+,{"stream_name":"stdout","time":917.714815286,"data":"  ep5 step 200/834 loss=0.0424 [706s]\n"}
+,{"stream_name":"stdout","time":917.714819722,"data":"  ep5 step 250/834 loss=0.0362 [714s]\n"}
+,{"stream_name":"stdout","time":917.714823969,"data":"  ep5 step 300/834 loss=0.0291 [723s]\n"}
+,{"stream_name":"stdout","time":917.714828371,"data":"  ep5 step 350/834 loss=0.0303 [732s]\n"}
+,{"stream_name":"stdout","time":917.714832663,"data":"  ep5 step 400/834 loss=0.0322 [740s]\n"}
+,{"stream_name":"stdout","time":917.714837031,"data":"  ep5 step 450/834 loss=0.0304 [749s]\n"}
+,{"stream_name":"stdout","time":917.714841275,"data":"  ep5 step 500/834 loss=0.0372 [758s]\n"}
+,{"stream_name":"stdout","time":917.71484549,"data":"  ep5 step 550/834 loss=0.0372 [766s]\n"}
+,{"stream_name":"stdout","time":917.714849752,"data":"  ep5 step 600/834 loss=0.0321 [775s]\n"}
+,{"stream_name":"stdout","time":917.714853997,"data":"  ep5 step 650/834 loss=0.0244 [784s]\n"}
+,{"stream_name":"stdout","time":917.714858224,"data":"  ep5 step 700/834 loss=0.0284 [793s]\n"}
+,{"stream_name":"stdout","time":917.714862469,"data":"  ep5 step 750/834 loss=0.0339 [801s]\n"}
+,{"stream_name":"stdout","time":917.714866889,"data":"  ep5 step 800/834 loss=0.0318 [810s]\n"}
+,{"stream_name":"stdout","time":917.714871284,"data":"  ep5: train loss=0.0328  val F1=0.9457  [837s]\n"}
+,{"stream_name":"stdout","time":917.714875571,"data":"\n"}
+,{"stream_name":"stdout","time":917.714879859,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.946 | test F1=0.943 [0.923, 0.961] P=0.926 R=0.960 PR-AUC=0.988\n"}
+,{"stream_name":"stdout","time":917.714885314,"data":"\n"}
+,{"stream_name":"stdout","time":1803.891999375,"data":"\n"}
+,{"stream_name":"stdout","time":1803.892049884,"data":"######## run 2 (gpu 0): dl.py --size large --model intfloat/multilingual-e5-base --lr 3e-5 --seed 2 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":1803.892564106,"data":"8 [577s]\n"}
+,{"stream_name":"stdout","time":1803.892573274,"data":"  ep4 step 450/834 loss=0.0655 [586s]\n"}
+,{"stream_name":"stdout","time":1803.892591443,"data":"  ep4 step 500/834 loss=0.0540 [595s]\n"}
+,{"stream_name":"stdout","time":1803.892595041,"data":"  ep4 step 550/834 loss=0.0466 [604s]\n"}
+,{"stream_name":"stdout","time":1803.892598376,"data":"  ep4 step 600/834 loss=0.0456 [612s]\n"}
+,{"stream_name":"stdout","time":1803.892601666,"data":"  ep4 step 650/834 loss=0.0560 [621s]\n"}
+,{"stream_name":"stdout","time":1803.892604933,"data":"  ep4 step 700/834 loss=0.0553 [629s]\n"}
+,{"stream_name":"stdout","time":1803.892608188,"data":"  ep4 step 750/834 loss=0.0430 [638s]\n"}
+,{"stream_name":"stdout","time":1803.892611652,"data":"  ep4 step 800/834 loss=0.0524 [647s]\n"}
+,{"stream_name":"stdout","time":1803.892615046,"data":"  ep4: train loss=0.0530  val F1=0.9457  [674s]\n"}
+,{"stream_name":"stdout","time":1803.892618398,"data":"  ep5 step 0/834 loss=0.0022 [676s]\n"}
+,{"stream_name":"stdout","time":1803.892621709,"data":"  ep5 step 50/834 loss=0.0440 [684s]\n"}
+,{"stream_name":"stdout","time":1803.892625017,"data":"  ep5 step 100/834 loss=0.0352 [693s]\n"}
+,{"stream_name":"stdout","time":1803.892628327,"data":"  ep5 step 150/834 loss=0.0320 [702s]\n"}
+,{"stream_name":"stdout","time":1803.892631551,"data":"  ep5 step 200/834 loss=0.0472 [710s]\n"}
+,{"stream_name":"stdout","time":1803.89263483,"data":"  ep5 step 250/834 loss=0.0450 [719s]\n"}
+,{"stream_name":"stdout","time":1803.892638164,"data":"  ep5 step 300/834 loss=0.0376 [728s]\n"}
+,{"stream_name":"stdout","time":1803.892641481,"data":"  ep5 step 350/834 loss=0.0376 [736s]\n"}
+,{"stream_name":"stdout","time":1803.892644771,"data":"  ep5 step 400/834 loss=0.0368 [745s]\n"}
+,{"stream_name":"stdout","time":1803.892647999,"data":"  ep5 step 450/834 loss=0.0387 [754s]\n"}
+,{"stream_name":"stdout","time":1803.892651369,"data":"  ep5 step 500/834 loss=0.0348 [762s]\n"}
+,{"stream_name":"stdout","time":1803.892654634,"data":"  ep5 step 550/834 loss=0.0325 [771s]\n"}
+,{"stream_name":"stdout","time":1803.892657932,"data":"  ep5 step 600/834 loss=0.0366 [780s]\n"}
+,{"stream_name":"stdout","time":1803.892661185,"data":"  ep5 step 650/834 loss=0.0335 [789s]\n"}
+,{"stream_name":"stdout","time":1803.892664536,"data":"  ep5 step 700/834 loss=0.0305 [798s]\n"}
+,{"stream_name":"stdout","time":1803.892667811,"data":"  ep5 step 750/834 loss=0.0272 [806s]\n"}
+,{"stream_name":"stdout","time":1803.892671138,"data":"  ep5 step 800/834 loss=0.0381 [815s]\n"}
+,{"stream_name":"stdout","time":1803.892674385,"data":"  ep5: train loss=0.0371  val F1=0.9490  [842s]\n"}
+,{"stream_name":"stdout","time":1803.892677849,"data":"\n"}
+,{"stream_name":"stdout","time":1803.892681453,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.949 | test F1=0.947 [0.929, 0.965] P=0.938 R=0.957 PR-AUC=0.990\n"}
+,{"stream_name":"stdout","time":1803.892686081,"data":"\n"}
+,{"stream_name":"stdout","time":2638.664862565,"data":"\n"}
+,{"stream_name":"stdout","time":2638.664908963,"data":"######## run 3 (gpu 1): dl.py --size xlarge --model intfloat/multilingual-e5-base --lr 3e-5 --seed 0 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":2638.665560118,"data":"00/1712 loss=0.0264 [1430s]\n"}
+,{"stream_name":"stdout","time":2638.665574746,"data":"  ep5 step 550/1712 loss=0.0312 [1439s]\n"}
+,{"stream_name":"stdout","time":2638.665580181,"data":"  ep5 step 600/1712 loss=0.0320 [1447s]\n"}
+,{"stream_name":"stdout","time":2638.665585299,"data":"  ep5 step 650/1712 loss=0.0328 [1456s]\n"}
+,{"stream_name":"stdout","time":2638.665590729,"data":"  ep5 step 700/1712 loss=0.0361 [1464s]\n"}
+,{"stream_name":"stdout","time":2638.665596122,"data":"  ep5 step 750/1712 loss=0.0288 [1473s]\n"}
+,{"stream_name":"stdout","time":2638.665616209,"data":"  ep5 step 800/1712 loss=0.0214 [1481s]\n"}
+,{"stream_name":"stdout","time":2638.665622671,"data":"  ep5 step 850/1712 loss=0.0272 [1490s]\n"}
+,{"stream_name":"stdout","time":2638.665625024,"data":"  ep5 step 900/1712 loss=0.0281 [1498s]\n"}
+,{"stream_name":"stdout","time":2638.66562735,"data":"  ep5 step 950/1712 loss=0.0252 [1507s]\n"}
+,{"stream_name":"stdout","time":2638.665629571,"data":"  ep5 step 1000/1712 loss=0.0245 [1515s]\n"}
+,{"stream_name":"stdout","time":2638.665631817,"data":"  ep5 step 1050/1712 loss=0.0240 [1524s]\n"}
+,{"stream_name":"stdout","time":2638.665634035,"data":"  ep5 step 1100/1712 loss=0.0234 [1532s]\n"}
+,{"stream_name":"stdout","time":2638.665636384,"data":"  ep5 step 1150/1712 loss=0.0200 [1541s]\n"}
+,{"stream_name":"stdout","time":2638.665638639,"data":"  ep5 step 1200/1712 loss=0.0277 [1549s]\n"}
+,{"stream_name":"stdout","time":2638.665640865,"data":"  ep5 step 1250/1712 loss=0.0289 [1558s]\n"}
+,{"stream_name":"stdout","time":2638.665643088,"data":"  ep5 step 1300/1712 loss=0.0286 [1566s]\n"}
+,{"stream_name":"stdout","time":2638.665645388,"data":"  ep5 step 1350/1712 loss=0.0249 [1575s]\n"}
+,{"stream_name":"stdout","time":2638.665647615,"data":"  ep5 step 1400/1712 loss=0.0152 [1583s]\n"}
+,{"stream_name":"stdout","time":2638.665649846,"data":"  ep5 step 1450/1712 loss=0.0179 [1592s]\n"}
+,{"stream_name":"stdout","time":2638.665652067,"data":"  ep5 step 1500/1712 loss=0.0218 [1600s]\n"}
+,{"stream_name":"stdout","time":2638.665654391,"data":"  ep5 step 1550/1712 loss=0.0242 [1609s]\n"}
+,{"stream_name":"stdout","time":2638.665656622,"data":"  ep5 step 1600/1712 loss=0.0249 [1617s]\n"}
+,{"stream_name":"stdout","time":2638.665658849,"data":"  ep5 step 1650/1712 loss=0.0246 [1626s]\n"}
+,{"stream_name":"stdout","time":2638.665661054,"data":"  ep5 step 1700/1712 loss=0.0223 [1634s]\n"}
+,{"stream_name":"stdout","time":2638.665664129,"data":"  ep5: train loss=0.0262  val F1=0.9602  [1678s]\n"}
+,{"stream_name":"stdout","time":2638.665679607,"data":"\n"}
+,{"stream_name":"stdout","time":2638.665683681,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.960 | test F1=0.952 [0.933, 0.969] P=0.947 R=0.957 PR-AUC=0.990\n"}
+,{"stream_name":"stdout","time":2638.665688843,"data":"\n"}
+,{"stream_name":"stdout","time":3616.318605871,"data":"\n"}
+,{"stream_name":"stdout","time":3616.318654827,"data":"######## run 4 (gpu 0): dl.py --size xlarge --model intfloat/multilingual-e5-base --lr 3e-5 --seed 1 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":3616.319205844,"data":"00/1712 loss=0.0168 [1483s]\n"}
+,{"stream_name":"stdout","time":3616.319218501,"data":"  ep5 step 550/1712 loss=0.0217 [1492s]\n"}
+,{"stream_name":"stdout","time":3616.319224011,"data":"  ep5 step 600/1712 loss=0.0318 [1501s]\n"}
+,{"stream_name":"stdout","time":3616.319229196,"data":"  ep5 step 650/1712 loss=0.0311 [1510s]\n"}
+,{"stream_name":"stdout","time":3616.319234358,"data":"  ep5 step 700/1712 loss=0.0315 [1519s]\n"}
+,{"stream_name":"stdout","time":3616.319239404,"data":"  ep5 step 750/1712 loss=0.0268 [1527s]\n"}
+,{"stream_name":"stdout","time":3616.319250069,"data":"  ep5 step 800/1712 loss=0.0172 [1536s]\n"}
+,{"stream_name":"stdout","time":3616.31925512,"data":"  ep5 step 850/1712 loss=0.0218 [1545s]\n"}
+,{"stream_name":"stdout","time":3616.319260341,"data":"  ep5 step 900/1712 loss=0.0229 [1554s]\n"}
+,{"stream_name":"stdout","time":3616.319265273,"data":"  ep5 step 950/1712 loss=0.0224 [1563s]\n"}
+,{"stream_name":"stdout","time":3616.319270287,"data":"  ep5 step 1000/1712 loss=0.0231 [1571s]\n"}
+,{"stream_name":"stdout","time":3616.319288928,"data":"  ep5 step 1050/1712 loss=0.0197 [1580s]\n"}
+,{"stream_name":"stdout","time":3616.31929304,"data":"  ep5 step 1100/1712 loss=0.0167 [1589s]\n"}
+,{"stream_name":"stdout","time":3616.319296938,"data":"  ep5 step 1150/1712 loss=0.0201 [1598s]\n"}
+,{"stream_name":"stdout","time":3616.31930071,"data":"  ep5 step 1200/1712 loss=0.0189 [1607s]\n"}
+,{"stream_name":"stdout","time":3616.319304563,"data":"  ep5 step 1250/1712 loss=0.0172 [1616s]\n"}
+,{"stream_name":"stdout","time":3616.319308302,"data":"  ep5 step 1300/1712 loss=0.0206 [1624s]\n"}
+,{"stream_name":"stdout","time":3616.319312391,"data":"  ep5 step 1350/1712 loss=0.0217 [1633s]\n"}
+,{"stream_name":"stdout","time":3616.319316131,"data":"  ep5 step 1400/1712 loss=0.0200 [1642s]\n"}
+,{"stream_name":"stdout","time":3616.319319846,"data":"  ep5 step 1450/1712 loss=0.0239 [1651s]\n"}
+,{"stream_name":"stdout","time":3616.319323713,"data":"  ep5 step 1500/1712 loss=0.0259 [1660s]\n"}
+,{"stream_name":"stdout","time":3616.319327575,"data":"  ep5 step 1550/1712 loss=0.0180 [1669s]\n"}
+,{"stream_name":"stdout","time":3616.319331403,"data":"  ep5 step 1600/1712 loss=0.0169 [1677s]\n"}
+,{"stream_name":"stdout","time":3616.319335126,"data":"  ep5 step 1650/1712 loss=0.0221 [1686s]\n"}
+,{"stream_name":"stdout","time":3616.319338891,"data":"  ep5 step 1700/1712 loss=0.0215 [1695s]\n"}
+,{"stream_name":"stdout","time":3616.319342693,"data":"  ep5: train loss=0.0213  val F1=0.9645  [1741s]\n"}
+,{"stream_name":"stdout","time":3616.319346538,"data":"\n"}
+,{"stream_name":"stdout","time":3616.319350292,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.964 | test F1=0.962 [0.946, 0.977] P=0.960 R=0.963 PR-AUC=0.993\n"}
+,{"stream_name":"stdout","time":3616.319355369,"data":"\n"}
+,{"stream_name":"stdout","time":3713.065818277,"data":"\n"}
+,{"stream_name":"stdout","time":3713.065869759,"data":"######## run 6 (gpu 0): dl.py --size small --model intfloat/multilingual-e5-base --lr 3e-5 --seed 1 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":3713.06644436,"data":"G    | \n"}
+,{"stream_name":"stdout","time":3713.066460223,"data":"classifier.dense.bias      | MISSING    | \n"}
+,{"stream_name":"stdout","time":3713.066466045,"data":"classifier.out_proj.weight | MISSING    | \n"}
+,{"stream_name":"stdout","time":3713.066471321,"data":"classifier.out_proj.bias   | MISSING    | \n"}
+,{"stream_name":"stdout","time":3713.066476335,"data":"\n"}
+,{"stream_name":"stdout","time":3713.066499325,"data":"Notes:\n"}
+,{"stream_name":"stdout","time":3713.066504644,"data":"- UNEXPECTED\t:can be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":3713.066509712,"data":"- MISSING\t:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":3713.066514935,"data":"multilingual-e5-base | title | len128 lr3e-05 ep5 | train=small (2267 пар) | device=cuda\n"}
+,{"stream_name":"stdout","time":3713.066520174,"data":"  ep1 step 0/71 loss=0.7473 [1s]\n"}
+,{"stream_name":"stdout","time":3713.06652489,"data":"  ep1 step 50/71 loss=0.5784 [9s]\n"}
+,{"stream_name":"stdout","time":3713.066528885,"data":"  ep1: train loss=0.5170  val F1=0.7760  [14s]\n"}
+,{"stream_name":"stdout","time":3713.066533384,"data":"  ep2 step 0/71 loss=0.4860 [16s]\n"}
+,{"stream_name":"stdout","time":3713.066537895,"data":"  ep2 step 50/71 loss=0.3340 [24s]\n"}
+,{"stream_name":"stdout","time":3713.066541965,"data":"  ep2: train loss=0.3073  val F1=0.8367  [30s]\n"}
+,{"stream_name":"stdout","time":3713.066560617,"data":"  ep3 step 0/71 loss=0.3497 [31s]\n"}
+,{"stream_name":"stdout","time":3713.06656496,"data":"  ep3 step 50/71 loss=0.2124 [40s]\n"}
+,{"stream_name":"stdout","time":3713.066568513,"data":"  ep3: train loss=0.2043  val F1=0.8531  [45s]\n"}
+,{"stream_name":"stdout","time":3713.066572033,"data":"  ep4 step 0/71 loss=0.1751 [47s]\n"}
+,{"stream_name":"stdout","time":3713.066575478,"data":"  ep4 step 50/71 loss=0.1466 [55s]\n"}
+,{"stream_name":"stdout","time":3713.066578765,"data":"  ep4: train loss=0.1630  val F1=0.8620  [61s]\n"}
+,{"stream_name":"stdout","time":3713.066582283,"data":"  ep5 step 0/71 loss=0.0597 [62s]\n"}
+,{"stream_name":"stdout","time":3713.066585495,"data":"  ep5 step 50/71 loss=0.1311 [70s]\n"}
+,{"stream_name":"stdout","time":3713.066588878,"data":"  ep5: train loss=0.1243  val F1=0.8707  [76s]\n"}
+,{"stream_name":"stdout","time":3713.066592894,"data":"\n"}
+,{"stream_name":"stdout","time":3713.066596672,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.871 | test F1=0.824 [0.794, 0.853] P=0.740 R=0.930 PR-AUC=0.891\n"}
+,{"stream_name":"stdout","time":3713.066601525,"data":"\n"}
+,{"stream_name":"stdout","time":4385.188350594,"data":"\n"}
+,{"stream_name":"stdout","time":4385.188426493,"data":"######## run 5 (gpu 1): dl.py --size xlarge --model intfloat/multilingual-e5-base --lr 3e-5 --seed 2 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":4385.188808745,"data":"00/1712 loss=0.0154 [1431s]\n"}
+,{"stream_name":"stdout","time":4385.188829422,"data":"  ep5 step 550/1712 loss=0.0262 [1439s]\n"}
+,{"stream_name":"stdout","time":4385.188835541,"data":"  ep5 step 600/1712 loss=0.0237 [1448s]\n"}
+,{"stream_name":"stdout","time":4385.188840934,"data":"  ep5 step 650/1712 loss=0.0244 [1456s]\n"}
+,{"stream_name":"stdout","time":4385.188846184,"data":"  ep5 step 700/1712 loss=0.0305 [1464s]\n"}
+,{"stream_name":"stdout","time":4385.188851182,"data":"  ep5 step 750/1712 loss=0.0256 [1473s]\n"}
+,{"stream_name":"stdout","time":4385.188856085,"data":"  ep5 step 800/1712 loss=0.0209 [1481s]\n"}
+,{"stream_name":"stdout","time":4385.188861082,"data":"  ep5 step 850/1712 loss=0.0304 [1490s]\n"}
+,{"stream_name":"stdout","time":4385.188865949,"data":"  ep5 step 900/1712 loss=0.0346 [1498s]\n"}
+,{"stream_name":"stdout","time":4385.188870526,"data":"  ep5 step 950/1712 loss=0.0258 [1507s]\n"}
+,{"stream_name":"stdout","time":4385.188874842,"data":"  ep5 step 1000/1712 loss=0.0198 [1515s]\n"}
+,{"stream_name":"stdout","time":4385.188879269,"data":"  ep5 step 1050/1712 loss=0.0260 [1524s]\n"}
+,{"stream_name":"stdout","time":4385.188883724,"data":"  ep5 step 1100/1712 loss=0.0252 [1532s]\n"}
+,{"stream_name":"stdout","time":4385.1888902,"data":"  ep5 step 1150/1712 loss=0.0228 [1541s]\n"}
+,{"stream_name":"stdout","time":4385.188896773,"data":"  ep5 step 1200/1712 loss=0.0210 [1549s]\n"}
+,{"stream_name":"stdout","time":4385.188899778,"data":"  ep5 step 1250/1712 loss=0.0170 [1558s]\n"}
+,{"stream_name":"stdout","time":4385.188903164,"data":"  ep5 step 1300/1712 loss=0.0190 [1566s]\n"}
+,{"stream_name":"stdout","time":4385.188906115,"data":"  ep5 step 1350/1712 loss=0.0183 [1575s]\n"}
+,{"stream_name":"stdout","time":4385.188909052,"data":"  ep5 step 1400/1712 loss=0.0227 [1583s]\n"}
+,{"stream_name":"stdout","time":4385.18891198,"data":"  ep5 step 1450/1712 loss=0.0220 [1592s]\n"}
+,{"stream_name":"stdout","time":4385.188915077,"data":"  ep5 step 1500/1712 loss=0.0214 [1600s]\n"}
+,{"stream_name":"stdout","time":4385.188918033,"data":"  ep5 step 1550/1712 loss=0.0180 [1609s]\n"}
+,{"stream_name":"stdout","time":4385.188921019,"data":"  ep5 step 1600/1712 loss=0.0195 [1617s]\n"}
+,{"stream_name":"stdout","time":4385.188956684,"data":"  ep5 step 1650/1712 loss=0.0291 [1626s]\n"}
+,{"stream_name":"stdout","time":4385.188961033,"data":"  ep5 step 1700/1712 loss=0.0223 [1634s]\n"}
+,{"stream_name":"stdout","time":4385.188964942,"data":"  ep5: train loss=0.0243  val F1=0.9629  [1677s]\n"}
+,{"stream_name":"stdout","time":4385.188982885,"data":"\n"}
+,{"stream_name":"stdout","time":4385.188986541,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.963 | test F1=0.963 [0.947, 0.978] P=0.966 R=0.960 PR-AUC=0.993\n"}
+,{"stream_name":"stdout","time":4385.1889909,"data":"\n"}
+,{"stream_name":"stdout","time":4479.781462672,"data":"\n"}
+,{"stream_name":"stdout","time":4479.781508252,"data":"######## run 7 (gpu 1): dl.py --size small --model intfloat/multilingual-e5-base --lr 3e-5 --seed 2 -\u003e exit 0\n"}
+,{"stream_name":"stdout","time":4479.781815522,"data":"G    | \n"}
+,{"stream_name":"stdout","time":4479.781827264,"data":"classifier.dense.weight    | MISSING    | \n"}
+,{"stream_name":"stdout","time":4479.781831887,"data":"classifier.out_proj.weight | MISSING    | \n"}
+,{"stream_name":"stdout","time":4479.78183632,"data":"classifier.dense.bias      | MISSING    | \n"}
+,{"stream_name":"stdout","time":4479.781840507,"data":"\n"}
+,{"stream_name":"stdout","time":4479.781844788,"data":"Notes:\n"}
+,{"stream_name":"stdout","time":4479.781849574,"data":"- UNEXPECTED\t:can be ignored when loading from different task/architecture; not ok if you expect identical arch.\n"}
+,{"stream_name":"stdout","time":4479.781855361,"data":"- MISSING\t:those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.\n"}
+,{"stream_name":"stdout","time":4479.781861016,"data":"multilingual-e5-base | title | len128 lr3e-05 ep5 | train=small (2267 пар) | device=cuda\n"}
+,{"stream_name":"stdout","time":4479.78186598,"data":"  ep1 step 0/71 loss=0.7041 [1s]\n"}
+,{"stream_name":"stdout","time":4479.781870892,"data":"  ep1 step 50/71 loss=0.5649 [9s]\n"}
+,{"stream_name":"stdout","time":4479.781875121,"data":"  ep1: train loss=0.5131  val F1=0.7886  [14s]\n"}
+,{"stream_name":"stdout","time":4479.781879362,"data":"  ep2 step 0/71 loss=0.1776 [16s]\n"}
+,{"stream_name":"stdout","time":4479.781883636,"data":"  ep2 step 50/71 loss=0.2656 [24s]\n"}
+,{"stream_name":"stdout","time":4479.781887587,"data":"  ep2: train loss=0.2722  val F1=0.8333  [30s]\n"}
+,{"stream_name":"stdout","time":4479.78189176,"data":"  ep3 step 0/71 loss=0.3183 [31s]\n"}
+,{"stream_name":"stdout","time":4479.781896269,"data":"  ep3 step 50/71 loss=0.2200 [40s]\n"}
+,{"stream_name":"stdout","time":4479.781900766,"data":"  ep3: train loss=0.2042  val F1=0.8374  [45s]\n"}
+,{"stream_name":"stdout","time":4479.781905407,"data":"  ep4 step 0/71 loss=0.2327 [47s]\n"}
+,{"stream_name":"stdout","time":4479.781909769,"data":"  ep4 step 50/71 loss=0.1304 [55s]\n"}
+,{"stream_name":"stdout","time":4479.781914139,"data":"  ep4: train loss=0.1403  val F1=0.8581  [60s]\n"}
+,{"stream_name":"stdout","time":4479.781918957,"data":"  ep5 step 0/71 loss=0.0314 [62s]\n"}
+,{"stream_name":"stdout","time":4479.781922922,"data":"  ep5 step 50/71 loss=0.1200 [70s]\n"}
+,{"stream_name":"stdout","time":4479.781927529,"data":"  ep5: train loss=0.1146  val F1=0.8562  [75s]\n"}
+,{"stream_name":"stdout","time":4479.7819315,"data":"\n"}
+,{"stream_name":"stdout","time":4479.781935812,"data":"ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 4): val F1=0.858 | test F1=0.839 [0.810, 0.865] P=0.766 R=0.927 PR-AUC=0.906\n"}
+,{"stream_name":"stdout","time":4479.781940881,"data":"\n"}
+,{"stream_name":"stderr","time":4481.903368079,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4481.903427716,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4482.164474064,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4482.164496981,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4482.784408464,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4484.038143713,"data":"[NbConvertApp] Writing 317665 bytes to __results__.html\n"}
+]

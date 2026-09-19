@@ -1,0 +1,37 @@
+Loading weights:   0%|          | 0/197 [00:00<?, ?it/s]Loading weights: 100%|██████████| 197/197 [00:00<00:00, 7037.24it/s]
+[transformers] [1mXLMRobertaForSequenceClassification LOAD REPORT[0m from: intfloat/multilingual-e5-base
+Key                        | Status     | 
+---------------------------+------------+-
+pooler.dense.weight        | UNEXPECTED | 
+pooler.dense.bias          | UNEXPECTED | 
+classifier.out_proj.bias   | MISSING    | 
+classifier.dense.weight    | MISSING    | 
+classifier.dense.bias      | MISSING    | 
+classifier.out_proj.weight | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+multilingual-e5-base | title | len128 lr3e-05 ep5 | train=small (2267 пар) | device=mps
+  ep1 step 0/142 loss=0.7001 [2s]
+  ep1 step 50/142 loss=0.6037 [36s]
+  ep1 step 100/142 loss=0.5334 [68s]
+  ep1: train loss=0.4674  val F1=0.8042  [107s]
+  ep2 step 0/142 loss=0.2980 [108s]
+  ep2 step 50/142 loss=0.3977 [140s]
+  ep2 step 100/142 loss=0.3185 [172s]
+  ep2: train loss=0.3110  val F1=0.8304  [214s]
+  ep3 step 0/142 loss=0.1767 [214s]
+  ep3 step 50/142 loss=0.2366 [250s]
+  ep3 step 100/142 loss=0.2430 [287s]
+  ep3: train loss=0.2123  val F1=0.8462  [332s]
+  ep4 step 0/142 loss=0.2401 [333s]
+  ep4 step 50/142 loss=0.2124 [369s]
+  ep4 step 100/142 loss=0.1653 [405s]
+  ep4: train loss=0.1628  val F1=0.8517  [447s]
+  ep5 step 0/142 loss=0.0070 [448s]
+  ep5 step 50/142 loss=0.1343 [484s]
+  ep5 step 100/142 loss=0.1396 [520s]
+  ep5: train loss=0.1226  val F1=0.8531  [566s]
+
+ИТОГ (multilingual-e5-base | title | len128 lr3e-05 ep5, лучшая эпоха 5): val F1=0.853 | test F1=0.864 [0.836, 0.892] P=0.806 R=0.930 PR-AUC=0.925

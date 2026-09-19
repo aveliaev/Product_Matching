@@ -1,0 +1,1 @@
+{"id": "leshahse/wdc-large-xlarge", "title": "wdc-large-xlarge", "code_file": "run.py", "language": "python", "kernel_type": "script", "is_private": true, "enable_gpu": true, "enable_internet": true, "dataset_sources": ["leshahse/wdc-computers-product-matching"], "competition_sources": [], "kernel_sources": []}

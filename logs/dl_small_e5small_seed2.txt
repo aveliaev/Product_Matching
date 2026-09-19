@@ -1,0 +1,27 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6958.74it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: intfloat/multilingual-e5-small
+Key               | Status  | 
+------------------+---------+-
+classifier.weight | MISSING | 
+classifier.bias   | MISSING | 
+
+Notes:
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+multilingual-e5-small | title | len128 lr5e-05 ep5 | train=small (2267 пар) | device=mps
+  ep1 step 0/71 loss=0.6966 [1s]
+  ep1 step 50/71 loss=0.6079 [22s]
+  ep1: train loss=0.5903  val F1=0.6989  [36s]
+  ep2 step 0/71 loss=0.4787 [37s]
+  ep2 step 50/71 loss=0.4135 [63s]
+  ep2: train loss=0.3773  val F1=0.8350  [79s]
+  ep3 step 0/71 loss=0.4804 [80s]
+  ep3 step 50/71 loss=0.3093 [107s]
+  ep3: train loss=0.2827  val F1=0.8620  [123s]
+  ep4 step 0/71 loss=0.1907 [124s]
+  ep4 step 50/71 loss=0.2367 [151s]
+  ep4: train loss=0.2318  val F1=0.8533  [166s]
+  ep5 step 0/71 loss=0.2568 [166s]
+  ep5 step 50/71 loss=0.2039 [191s]
+  ep5: train loss=0.2030  val F1=0.8600  [208s]
+
+ИТОГ (multilingual-e5-small | title | len128 lr5e-05 ep5, лучшая эпоха 3): val F1=0.862 | test F1=0.827 [0.795, 0.857] P=0.755 R=0.913 PR-AUC=0.838
