@@ -1,0 +1,14 @@
+# данные — скачиваются с сайта WDC (см. README)
+computers_train/
+computers_gs.json
+*.zip
+
+# служебные копии для Kaggle — пересоздаются kaggle_job.py; результаты уже перенесены в проект
+kaggle_build/
+kaggle_out/
+
+# окружение и кэш
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

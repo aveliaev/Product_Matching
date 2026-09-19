@@ -14,8 +14,6 @@ import os
 import random
 import time
 
-os.environ.setdefault("HF_HUB_OFFLINE", "1")  # модели берём из локального кэша
-
 import numpy as np
 import pandas as pd
 import torch
