@@ -107,28 +107,6 @@ Val-сплиты лежат в `splits/` и используются всеми 
 
 У `experiments.py` и `experiments_v2.py` есть флаг `--plots`: перерисовать графики из готовых CSV без пересчёта.
 
-### 4. Обучение на Kaggle GPU (для large / xlarge)
-
-На ноутбуке e5-base на xlarge учится несколько часов, на Kaggle (2×T4, бесплатно до 30 ч в неделю) — ~30 минут на прогон.
-
-1. Kaggle-аккаунт с подтверждённым телефоном, API-токен из Settings → API сохранить в `~/.kaggle/access_token`.
-2. `pip install kaggle` (скрипт ожидает CLI в `~/.venvs/kaggle`, путь задаётся в `KAGGLE` в начале `kaggle_job.py`).
-3. Запуск:
-
-```bash
-python3 kaggle_job.py setup-data
-```
-
-```bash
-python3 kaggle_job.py push xlarge "--size xlarge --model intfloat/multilingual-e5-base --lr 3e-5 --seed 0"
-```
-
-```bash
-python3 kaggle_job.py fetch xlarge
-```
-
-`setup-data` загружает данные приватным датасетом (один раз), `push` собирает kernel из текущих `common.py` и `dl.py` и раскладывает прогоны по двум GPU, `fetch` скачивает результаты в `results_dl.csv` и `predictions/`.
-
 ## Данные и цитирование
 
 Ralph Peeters, Anna Primpeli, Christian Bizer. *WDC Product Data Corpus and Gold Standard for Large-Scale Product Matching*, version 2.0, 2019. Web Data Commons, University of Mannheim. http://webdatacommons.org/largescaleproductcorpus/v2/
